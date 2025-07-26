@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "万能分割検索",
+  "version": "3.0",
+  "description": "右クリックまたはアドレスバーから、テキストを分割して検索します。",
+  "permissions": ["contextMenus", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "omnibox": {
+    "keyword": "split"
+  },
+  "options_page": "options.html",
+  "action": {
+    "default_icon": "icon48.png",
+    "default_title": "設定を開く"
+  },
+  "icons": {
+    "48": "icon48.png"
+  }
+}

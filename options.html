@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>カスタム分割検索 設定</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 1em;
+        width: 300px;
+      }
+      label {
+        display: block;
+        margin-bottom: 0.5em;
+      }
+      input {
+        width: 100%;
+        padding: 0.5em;
+        box-sizing: border-box;
+      }
+      button {
+        margin-top: 1em;
+        padding: 0.5em 1em;
+      }
+      #status {
+        margin-top: 1em;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>区切り文字の設定</h1>
+    <p>検索時に分割する文字を入力してください。</p>
+
+    <label for="delimiters">区切り文字:</label>
+    <input type="text" id="delimiters" />
+
+    <button id="save">保存</button>
+    <div id="status"></div>
+
+    <script src="options.js"></script>
+  </body>
+</html>
